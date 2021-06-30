@@ -1,0 +1,11 @@
+File Path - /work/Data_Files2/
+
+    Layer_DR1_1.shp: modified county-level shapefile of contiguous US - contains data for Death-Case Ratio for Peak 1 (03/01/20 - 04/30/20) and all age cohort and comorbidity variables.  Number of observations (counties): 1445
+
+    Layer_DR2_1.shp: modified county-level shapefile of contiguous US - contains data for Death-Case Ratio for Peak 2 (06/01/20 - 07/31/20) and all age cohort and comorbidity variables.  Number of observations (counties): 1964
+
+    DR1_table.csv:  CSV table containing Dependent Variable - Death-Case Ratio for Peak 1 (03/01/20 - 04/30/20) and all age cohort and comorbidity variables.  Number of observations (counties): 1445
+
+    DR2_table.csv: CSV table containing Dependent Variable - Death-Case Ratio for Peak 2 (06/01/20 - 07/31/20) and all age cohort and comorbidity variables.  Number of observations (counties): 1964
+
+   
