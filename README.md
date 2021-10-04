@@ -12,8 +12,9 @@ August 20th, 2021
 
 A county-level assessment of COVID-19 in relation to age demographics and comorbidities is carried out to provide context to the emerging hotspots of the virus during the early stages of the pandemic.  The two peak periods under investigation were 03/01/20 - 04/30/20 and 06/01/20 - 07/31/20.  The spatial relationships between coronavirus, age, and comorbidities is examined using geographically weighted regression (GWR).  COVID-19 incidence rate and death-case ratio function as the dependent variables. The independent variables include percent population in age cohorts 50 – 74 and above 75, heart disease mortality, diabetes, and obesity.  Data and methodological challenges in defining the GWR model had to be addressed in the interests of reproducibility and transparency.
 
-**B.  Data Sources
-**
+**B.  Data Sources**
+
+
 Variable Definition	Source
  
 COVID-19 case and death counts	USAFacts.org
