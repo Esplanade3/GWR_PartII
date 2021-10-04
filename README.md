@@ -131,52 +131,84 @@ Jupyter Notebook
 PySAL – access sample code and definitions
 https://mgwr.readthedocs.io/en/latest/generated/mgwr.gwr.GWRResults.html#mgwr.gwr.GWRResults
  
+
 H.  OLS Regression
 
 Run OLS regression for each dataset with incidence rates and death-case ratios for each peak period as the dependent variable. 
 
 Code sample:
 
-
-
+![image](https://user-images.githubusercontent.com/73550457/135922625-8a8fd2e6-423b-46c9-8229-371bacacbeb6.png)
 
 
 I.   GWR – model specification
-Model Type: Continuous 
+
+Model Type: Continuous
+
 Bandwidth:  Number of Neighbors
+
 Weighting Scheme: Gaussian
+
 Bandwidth:
+
 The golden section search method was used to identify the appropriate number of neighbors for each of the datasets based on the lowest AIC value.
+
 Code sample for testing suitable bandwidth:
+
+![image](https://user-images.githubusercontent.com/73550457/135922777-e91ebe90-27fe-4815-a4c7-a6fb702cf132.png)
+
  
 Bandwidths based on number of neighbors for each dataset provided below:
+
 Peak Period	Dependent Variable	GWR Bandwidth (no. of neighbors)
-Peak 1: 03/01/20 - 04/30/20	Incidence Rate	102
-Peak 2: 06/01/20 - 07/31/20	Incidence Rate	111
+
 Peak 1: 03/01/20 - 04/30/20	Death-Case Ratio	210
+
 Peak 2: 06/01/20 - 07/31/20	Death-Case Ratio	137
 
 
-
 Code sample for specifying the GWR model:
+
+![image](https://user-images.githubusercontent.com/73550457/135922863-5b674529-8760-40e2-bbd4-22f195e88bfc.png)
  
 
 J.  Summary of OLS Regression Results
-Example using IR1_log as the dependent variable (dataset 1):
+
+Example using DR1_log as the dependent variable (dataset 1):
+
+![image](https://user-images.githubusercontent.com/73550457/135923032-8c149f5c-a188-4ef0-98fb-ce2eb3aef6f7.png)
+
  
 K.  Summary of GWR Results
-Example using IR1_log as the dependent variable (dataset 1).
+
+Example using DR1_log as the dependent variable (dataset 1).
+
 Code sample and results for model fit statistics:
+
+![image](https://user-images.githubusercontent.com/73550457/135923138-73a4a683-160d-4902-87ec-6329c0b30a47.png)
+
  
 Code sample and results for local b coefficients:
+
+![image](https://user-images.githubusercontent.com/73550457/135923210-f86d91db-e4a8-4d6b-9f91-6fce5a57e622.png)
+
  
 Standardized Residual Map:
+
+![image](https://user-images.githubusercontent.com/73550457/135923301-35eaf8e2-c0cd-4e29-8119-a5eb638d362a.png)
+
  
 Local R2 value map:
+
+![image](https://user-images.githubusercontent.com/73550457/135923353-03665c98-a174-4dac-9b22-22cc532f831b.png)
+
  
 L.  Jupyter Notebooks
+
 For complete code sample and results using individual datasets, refer to the detailed notebooks.
+
 Notebook 1: https://cybergisxhub.cigi.illinois.edu/notebook/geographically-weighted-regression-part-i-covid-19-incidence/
+
 Notebook 2: https://cybergisxhub.cigi.illinois.edu/notebook/geographically-weighted-regression-part-ii-covid-19-mortality/
 
 
