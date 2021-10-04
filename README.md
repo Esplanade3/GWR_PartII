@@ -1,5 +1,5 @@
-Examining Local Relationships between Age and Underlying Conditions on COVID-19 Mortality
-
+**Examining Local Relationships between Age and Underlying Conditions on COVID-19 Mortality
+**
 Data and Computational Steps
 
 Prepared by: Naomi W. Lazarus, PhD
@@ -7,12 +7,12 @@ Prepared by: Naomi W. Lazarus, PhD
 August 20th, 2021
  
 
-A. Introduction
+**A. Introduction**
 
 A county-level assessment of COVID-19 in relation to age demographics and comorbidities is carried out to provide context to the emerging hotspots of the virus during the early stages of the pandemic.  The two peak periods under investigation were 03/01/20 - 04/30/20 and 06/01/20 - 07/31/20.  The spatial relationships between coronavirus, age, and comorbidities is examined using geographically weighted regression (GWR).  COVID-19 incidence rate and death-case ratio function as the dependent variables. The independent variables include percent population in age cohorts 50 – 74 and above 75, heart disease mortality, diabetes, and obesity.  Data and methodological challenges in defining the GWR model had to be addressed in the interests of reproducibility and transparency.
 
-B.  Data Sources
-
+**B.  Data Sources
+**
 Variable Definition	Source
  
 COVID-19 case and death counts	USAFacts.org
@@ -33,7 +33,7 @@ Percent adult population with diagnosed obesity	Centers for Disease Control and 
 https://gis.cdc.gov/grasp/diabetes/DiabetesAtlas.html#
 
 
-C.  Dependent Variables
+**C.  Dependent Variables**
 
 Death-case ratios during peak period 1  (03/01/20 to 04/30/20)
 Death-case ratios during peak period 2  (06/01/20 to 07/31/20)
@@ -50,7 +50,7 @@ Death to Case Ratio =
 Log Transformation:
 Dependent variables were transformed (Log10) to address skewness.  Can be done on Excel or SPSS.
 
-D.  Datasets
+**D.  Datasets**
 
 Counties with no recorded coronavirus cases or deaths during the peak periods were removed. 
 Counties with death counts below 10 due to heart disease were removed. 
@@ -64,7 +64,7 @@ Peak 1: 03/01/20 - 04/30/20	Death-Case Ratio	N = 1,445
 
 Peak 2: 06/01/20 - 07/31/20	Death-Case Ratio	N = 1,964
 
-E.  File Descriptions
+**E.  File Descriptions**
 
 Layer_DR1_1.shp: modified county-level shapefile of contiguous US - contains data for Death-Case Ratio for Peak 1 (03/01/20 - 04/30/20) and all age cohort and comorbidity variables.  Number of observations (counties): 1445
 
@@ -75,7 +75,7 @@ DR1_table.csv:  CSV table containing Dependent Variable - Death-Case Ratio for P
 DR2_table.csv: CSV table containing Dependent Variable - Death-Case Ratio for Peak 2 (06/01/20 - 07/31/20) and all age cohort and comorbidity variables.  Number of observations (counties): 1964
 
 
-F.  Variable Descriptions
+**F.  Variable Descriptions**
 
 Dependent Variables:
 
@@ -122,7 +122,7 @@ Other Variables - not directly referenced in the code sample or not included in 
         Shape_Length - perimeter of polygon boundary of spatial feature (county) in meters
         Shape_Area - areal extent of polygon of spatial feature (county) in square meters
 
-G.  Software
+**G.  Software**
 
 ArcGIS Pro 2.5
 
@@ -132,7 +132,7 @@ PySAL – access sample code and definitions
 https://mgwr.readthedocs.io/en/latest/generated/mgwr.gwr.GWRResults.html#mgwr.gwr.GWRResults
  
 
-H.  OLS Regression
+**H.  OLS Regression**
 
 Run OLS regression for each dataset with incidence rates and death-case ratios for each peak period as the dependent variable. 
 
@@ -141,7 +141,7 @@ Code sample:
 ![image](https://user-images.githubusercontent.com/73550457/135922625-8a8fd2e6-423b-46c9-8229-371bacacbeb6.png)
 
 
-I.   GWR – model specification
+**I.   GWR – model specification**
 
 Model Type: Continuous
 
@@ -172,14 +172,14 @@ Code sample for specifying the GWR model:
 ![image](https://user-images.githubusercontent.com/73550457/135922863-5b674529-8760-40e2-bbd4-22f195e88bfc.png)
  
 
-J.  Summary of OLS Regression Results
+**J.  Summary of OLS Regression Results**
 
 Example using DR1_log as the dependent variable (dataset 1):
 
 ![image](https://user-images.githubusercontent.com/73550457/135923032-8c149f5c-a188-4ef0-98fb-ce2eb3aef6f7.png)
 
  
-K.  Summary of GWR Results
+**K.  Summary of GWR Results**
 
 Example using DR1_log as the dependent variable (dataset 1).
 
@@ -203,7 +203,7 @@ Local R2 value map:
 ![image](https://user-images.githubusercontent.com/73550457/135923353-03665c98-a174-4dac-9b22-22cc532f831b.png)
 
  
-L.  Jupyter Notebooks
+**L.  Jupyter Notebooks**
 
 For complete code sample and results using individual datasets, refer to the detailed notebooks.
 
