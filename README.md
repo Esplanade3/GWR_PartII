@@ -1,5 +1,6 @@
-**Examining Local Relationships between Age and Underlying Conditions on COVID-19 Mortality
-**
+**Examining Local Relationships between Age and Underlying Conditions on COVID-19 Mortality**
+
+
 Data and Computational Steps
 
 Prepared by: Naomi W. Lazarus, PhD
